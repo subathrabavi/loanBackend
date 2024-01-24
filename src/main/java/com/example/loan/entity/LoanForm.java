@@ -48,8 +48,13 @@ public class LoanForm {
 	private long mobile;
 	private String consent;
 	private String declaration;
-	
-	
+	private String image;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public int getLoan() {
 		return loan;
 	}
@@ -65,8 +70,8 @@ public class LoanForm {
 	public String getUseage() {
 		return useage;
 	}
-	public void setUseage(String use) {
-		this.useage = use;
+	public void setUseage(String useage) {
+		this.useage = useage;
 	}
 	public String getFirstname() {
 		return firstname;
@@ -254,7 +259,14 @@ public class LoanForm {
 	public void setDeclaration(String declaration) {
 		this.declaration = declaration;
 	}
-
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 	
-
-}
+	  
+	
+}	
+	
