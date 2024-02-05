@@ -8,9 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
+import com.example.loan.entity.AcOpening;
 import com.example.loan.entity.LoanForm;
 import com.example.loan.entity.Login;
 import com.example.loan.entity.SignUp;
+import com.example.loan.repository.AcOpeningRepository;
 import com.example.loan.repository.LoanRepository;
 import com.example.loan.repository.SignupRepository;
 
@@ -20,6 +22,8 @@ public class LoanDao {
 	LoanRepository loanr;
 	@Autowired
 	SignupRepository signsrepo;
+	@Autowired
+	AcOpeningRepository acRepo;
 	@Autowired
 	PasswordEncoder encoder;
 

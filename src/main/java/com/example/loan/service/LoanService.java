@@ -9,13 +9,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.loan.dao.LoanDao;
+import com.example.loan.entity.AcOpening;
 import com.example.loan.entity.LoanForm;
 import com.example.loan.entity.Login;
 import com.example.loan.entity.SignUp;
 @Service
 public class LoanService {
-@Autowired
-LoanDao loand;
+
+	
+	@Autowired
+	LoanDao loand;
+	
+	
 	public LoanForm postform(LoanForm loan) {
 		
 		return loand.postform(loan);
