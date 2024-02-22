@@ -16,7 +16,7 @@ public class Security {
 
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-		return http.csrf().disable().authorizeHttpRequests().requestMatchers("/sign","/log","/postForm","/getAll","/acopening/post","/acopening/getall","/acopening/getAccount/**","/acopening/getid/**","/acopening/deposit/**","/acopening/withdraw/**","/acopening/delete/**").permitAll().and()
+		return http.csrf().disable().authorizeHttpRequests().requestMatchers("/sign","/log","/postForm","/getAll","/acopening/post","/acopening/getall","/acopening/getAccount/**","/acopening/getid/**","/acopening/deposit/**","/acopening/withdraw/**","/acopening/delete/**","/staff/post","/staff/getAll","/staff/get/**","/staff/put/**","/staff/delete/**").permitAll().and()
 				.authorizeHttpRequests().requestMatchers("**").authenticated().and().formLogin().and().build();
 	}
 
